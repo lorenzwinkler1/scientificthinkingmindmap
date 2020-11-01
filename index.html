@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="lib/css/jsmind.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript" src="lib/js/jsmind.js"></script>
+    <!--
+            enable drag-and-drop feature
+            <script type="text/javascript" src="js/jsmind.draggable.js"></script>
+        -->
+</head>
+
+<body>
+    <div id="jsmind_container"></div>
+    <div class="footer">
+        <div class="legend">
+            <div class="legendentry">
+                <div class="legendentrydescription">
+
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var mind = {
+                "meta": {
+                    "name": "Scientific Thinking",
+                    "Author": "Lorenz Winkler"
+                },
+                "format": "node_tree",
+                "data":
+                {
+                    "id": "root", "isroot": true, "topic": "Scientific Thinking", children: [
+                        {
+                            "id": "history_main_toggle", expanded: false, "isroot": false, "topic": "History", "background-color": "lightblue", direction: "left", children: [
+                                { id: "history1_details", "background-color": "lightgreen", topic: "Plato (aesthetics, ethics, truth)", direction: "left" },
+                                { id: "history2_details", "background-color": "lightgreen", topic: "The pope and the King", direction: "left" },
+                                { id: "history3_details", "background-color": "lightgreen", topic: "Enlightment era", direction: "left" },
+                                { id: "history4_details", "background-color": "lightgreen", topic: "French revolution", direction: "left" },
+                                { id: "history5_details", "background-color": "lightgreen", topic: "Criticism and distopia", direction: "left" },
+
+                            ]
+                        },
+
+                        {
+                            "id": "method_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Method", direction: "left", children: [
+                                {
+                                    id: "method_examples", "background-color": "lightblue", "topic": "abstraction", direction: "left", children: [
+
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+
+            };
+            var options = {
+                container: 'jsmind_container',
+                theme: 'clouds',
+                editable: false,
+
+            };
+            var jm = new jsMind(options);
+            jm.show(mind);
+
+
+            var detailids = [
+                "history1_details",
+                "history2_details",
+                "history3_details",
+                "history4_details",
+                "history5_details"
+            ]
+
+            var details = {
+                "history1_details": "<div class=\"details\"> This are the details of history 1 </div>",
+                "history2_details": "<div class=\"details\"> This are the details of history 2 </div>",
+                "history3_details": "<div class=\"details\"> This are the details of history 3 </div>",
+                "history4_details": "<div class=\"details\"> This are the details of history 4 </div>",
+                "history5_details": "<div class=\"details\"> This are the details of history 5 </div>",
+
+            }
+
+            function hidedetails(idtoexclude) {
+                detailids.forEach(id => {
+
+                    if (idtoexclude != id) {
+                        let node = jm.mind.get_node(id);
+                        if (node.topic.indexOf("<div class=\"details\">") >= 0) {
+                            let indexof = node.topic.indexOf("<div class=\"details\">");
+                            jm.enable_edit();
+                            jm.update_node(id, node.topic.substring(0, indexof));
+                            jm.disable_edit();
+                        }
+                    }
+                });
+            }
+
+            jm.add_event_listener((nr, data) => {
+                if (data.evt === "select_node") {
+                    hidedetails();
+
+                    if (data.node.indexOf("toggle") >= 0) {
+                        //Do toggle
+                        var selected_node = jm.get_selected_node();
+                        console.log(selected_node)
+                        if (data.node) {
+                            jm.toggle_node(data.node);
+                        }
+                    } else if (data.node.indexOf("details") >= 0) {
+                        var selected_node = jm.get_selected_node();
+
+                        jm.enable_edit();
+                        jm.update_node(data.node, selected_node.topic + details[data.node])
+                        jm.disable_edit();
+                    } else {
+
+                    }
+                }
+            });
+
+
+
+
+        </script>
+</body>
+
+</html>

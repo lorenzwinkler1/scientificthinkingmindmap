@@ -1,0 +1,11 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+#jsmind_container {
+  background-color: gray;
+}
+.details {
+  max-width: 420px;
+}

@@ -146,7 +146,7 @@ jmnodes.theme-pomegranate jmexpander:hover{}
 /* clouds theme */
 jmnodes.theme-clouds jmnode{background-color:#ecf0f1;color:#333;}
 jmnodes.theme-clouds jmnode:hover{background-color:#bdc3c7;}
-jmnodes.theme-clouds jmnode.selected{background-color:#11f;color:#fff;}
+/* jmnodes.theme-clouds jmnode.selected{background-color:#11f;color:#333;} */
 jmnodes.theme-clouds jmnode.root{}
 jmnodes.theme-clouds jmexpander{}
 jmnodes.theme-clouds jmexpander:hover{}

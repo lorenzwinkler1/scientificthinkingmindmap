@@ -2,10 +2,42 @@ body,
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
 }
-#jsmind_container {
-  background-color: gray;
+#jsmind-container {
+  height: 100%;
+  width: 100%;
 }
 .details {
   max-width: 420px;
+  /* width: 400px; */
+  white-space: normal;
+}
+.legend {
+  position: fixed;
+  left: 0;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size:14pt;
+  user-select: none;
+}
+.legendentry {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.legendentrybox {
+  width: 14px;
+  height: 8px;
+  margin: 5px;
+  border: 1px solid black;
+}
+.legendentrybox-lightblue {
+  background-color: lightblue;
+}
+.legendentrybox-lightgreen {
+  background-color: lightgreen;
 }

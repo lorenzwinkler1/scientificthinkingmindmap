@@ -12,119 +12,155 @@
 </head>
 
 <body>
-    <div id="jsmind_container"></div>
-    <div class="footer">
-        <div class="legend">
-            <div class="legendentry">
-                <div class="legendentrydescription">
+    <div class="jsmind_cointer_container">
+        <div id="jsmind_container"></div>
 
-                </div>
+    </div>
+    <div class="legend">
+        <div class="legendentry">
+            <div class="legendentrybox legendentrybox-lightblue">
+
+            </div>
+            <div class="legendentrydescription">
+                Click to expand
             </div>
         </div>
-        <script type="text/javascript">
-            var mind = {
-                "meta": {
-                    "name": "Scientific Thinking",
-                    "Author": "Lorenz Winkler"
-                },
-                "format": "node_tree",
-                "data":
-                {
-                    "id": "root", "isroot": true, "topic": "Scientific Thinking", children: [
-                        {
-                            "id": "history_main_toggle", expanded: false, "isroot": false, "topic": "History", "background-color": "lightblue", direction: "left", children: [
-                                { id: "history1_details", "background-color": "lightgreen", topic: "Plato (aesthetics, ethics, truth)", direction: "left" },
-                                { id: "history2_details", "background-color": "lightgreen", topic: "The pope and the King", direction: "left" },
-                                { id: "history3_details", "background-color": "lightgreen", topic: "Enlightment era", direction: "left" },
-                                { id: "history4_details", "background-color": "lightgreen", topic: "French revolution", direction: "left" },
-                                { id: "history5_details", "background-color": "lightgreen", topic: "Criticism and distopia", direction: "left" },
+        <div class="legendentry">
+            <div class="legendentrybox legendentrybox-lightgreen">
 
-                            ]
-                        },
+            </div>
+            <div class="legendentrydescription">
+                Click to get some extra details
+            </div>
+        </div>
 
-                        {
-                            "id": "method_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Method", direction: "left", children: [
-                                {
-                                    id: "method_examples", "background-color": "lightblue", "topic": "abstraction", direction: "left", children: [
+    </div>
 
-                                    ]
-                                }
-                            ]
-                        }
+    </div>
+    <script type="text/javascript">
+        var mind = {
+            "meta": {
+                "name": "Scientific Thinking",
+                "Author": "Lorenz Winkler"
+            },
+            "format": "node_tree",
+            "data":
+            {
+                "id": "root", "isroot": true, "topic": "Scientific Thinking", children: [
+                    {
+                        "id": "history_main_toggle", expanded: false, "isroot": false, "topic": "History", "background-color": "lightblue", direction: "left", children: [
+                            { id: "history1_details", "background-color": "lightgreen", topic: "Plato (aesthetics, ethics, truth)", direction: "left" },
+                            { id: "history2_details", "background-color": "lightgreen", topic: "The pope and the King", direction: "left" },
+                            { id: "history3_details", "background-color": "lightgreen", topic: "Enlightment era", direction: "left" },
+                            { id: "history4_details", "background-color": "lightgreen", topic: "French revolution", direction: "left" },
+                            { id: "history5_details", "background-color": "lightgreen", topic: "Criticism and distopia", direction: "left" },
 
-                    ]
-                }
+                        ]
+                    },
 
-            };
-            var options = {
-                container: 'jsmind_container',
-                theme: 'clouds',
-                editable: false,
+                    {
+                        "id": "method_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Method", direction: "left", children: [
+                            {
+                                id: "method_abstraction_toggle", expanded: false, "background-color": "lightblue", "topic": "Abstraction", direction: "left", children: [
+                                    { id: "method_abstrction1_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
+                                    { id: "method_abstrction2_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
+                                    { id: "method_abstrction3_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
+                                    { id: "method_abstrction4_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
 
-            };
-            var jm = new jsMind(options);
-            jm.show(mind);
+                                ]
+                            },
+                            {
+                                id: "method_examples_toggle", expanded: false, "background-color": "lightblue", "topic": "Examples", direction: "left", children: [
+                                    { id: "method_examples1_details", "background-color": "lightgreen", topic: "Method Example 1", direction: "left" },
+                                    { id: "method_examples2_details", "background-color": "lightgreen", topic: "Method Example 2", direction: "left" },
+                                    { id: "method_examples3_details", "background-color": "lightgreen", topic: "Method Example 3", direction: "left" },
+                                    { id: "method_examples4_details", "background-color": "lightgreen", topic: "Method Example 4", direction: "left" },
 
-
-            var detailids = [
-                "history1_details",
-                "history2_details",
-                "history3_details",
-                "history4_details",
-                "history5_details"
-            ]
-
-            var details = {
-                "history1_details": "<div class=\"details\"> This are the details of history 1 </div>",
-                "history2_details": "<div class=\"details\"> This are the details of history 2 </div>",
-                "history3_details": "<div class=\"details\"> This are the details of history 3 </div>",
-                "history4_details": "<div class=\"details\"> This are the details of history 4 </div>",
-                "history5_details": "<div class=\"details\"> This are the details of history 5 </div>",
-
-            }
-
-            function hidedetails(idtoexclude) {
-                detailids.forEach(id => {
-
-                    if (idtoexclude != id) {
-                        let node = jm.mind.get_node(id);
-                        if (node.topic.indexOf("<div class=\"details\">") >= 0) {
-                            let indexof = node.topic.indexOf("<div class=\"details\">");
-                            jm.enable_edit();
-                            jm.update_node(id, node.topic.substring(0, indexof));
-                            jm.disable_edit();
-                        }
+                                ]
+                            }
+                        ]
                     }
-                });
+
+                ]
             }
 
-            jm.add_event_listener((nr, data) => {
-                if (data.evt === "select_node") {
-                    hidedetails();
+        };
+        var options = {
+            container: 'jsmind_container',
+            theme: 'clouds',
+            editable: false,
 
-                    if (data.node.indexOf("toggle") >= 0) {
-                        //Do toggle
-                        var selected_node = jm.get_selected_node();
-                        console.log(selected_node)
-                        if (data.node) {
-                            jm.toggle_node(data.node);
-                        }
-                    } else if (data.node.indexOf("details") >= 0) {
-                        var selected_node = jm.get_selected_node();
+        };
+        var jm = new jsMind(options);
+        jm.show(mind);
 
+
+        var detailids = [
+            "history1_details",
+            "history2_details",
+            "history3_details",
+            "history4_details",
+            "history5_details",
+            "method_abstrction1_details",
+            "method_abstrction2_details",
+            "method_abstrction3_details",
+            "method_abstrction4_details"
+        ]
+
+        var details = {
+            "history1_details": "<div class=\"details\"> This are the details of history 1 </div>",
+            "history2_details": "<div class=\"details\"> This are the details of history 2 </div>",
+            "history3_details": "<div class=\"details\"> This are the details of history 3 </div>",
+            "history4_details": "<div class=\"details\"> This are the details of history 4 </div>",
+            "history5_details": "<div class=\"details\"> This are the details of history 5 </div>",
+            "method_abstrction1_details": "<div class=\"details\"><p> This are the details of method abstraction 1 asdfgafhsfhgdfg test test test test test test test test</p></div>",
+            "method_abstrction2_details": "<div class=\"details\"> This are the details of method abstraction 2 </div>",
+            "method_abstrction3_details": "<div class=\"details\"> This are the details of method abstraction 3 </div>",
+            "method_abstrction4_details": "<div class=\"details\"> This are the details of method abstraction 4 </div>"
+        }
+
+        function hidedetails(idtoexclude) {
+            detailids.forEach(id => {
+
+                if (idtoexclude != id) {
+                    let node = jm.mind.get_node(id);
+                    if (node.topic.indexOf("<div class=\"details\">") >= 0) {
+                        let indexof = node.topic.indexOf("<div class=\"details\">");
                         jm.enable_edit();
-                        jm.update_node(data.node, selected_node.topic + details[data.node])
+                        jm.update_node(id, node.topic.substring(0, indexof));
                         jm.disable_edit();
-                    } else {
-
                     }
                 }
             });
+        }
+
+        jm.add_event_listener((nr, data) => {
+            if (data.evt === "select_node") {
+                hidedetails();
+
+                if (data.node.indexOf("toggle") >= 0) {
+                    //Do toggle
+                    var selected_node = jm.get_selected_node();
+                    console.log(selected_node)
+                    if (data.node) {
+                        jm.toggle_node(data.node);
+                    }
+                } else if (data.node.indexOf("details") >= 0) {
+                    var selected_node = jm.get_selected_node();
+
+                    jm.enable_edit();
+                    jm.update_node(data.node, selected_node.topic + details[data.node])
+                    jm.disable_edit();
+                } else {
+
+                }
+            }
+        });
 
 
 
 
-        </script>
+    </script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@ html {
   bottom: 15px;
   display: flex;
   flex-direction: column;
-  font-size:14pt;
+  font-size:13pt;
   user-select: none;
 }
 .legendentry {
@@ -30,9 +30,9 @@ html {
   align-items: center;
 }
 .legendentrybox {
-  width: 14px;
-  height: 8px;
-  margin: 5px;
+  width: 20px;
+  height: 12px;
+  margin: 4px;
   border: 1px solid black;
 }
 .legendentrybox-lightblue {

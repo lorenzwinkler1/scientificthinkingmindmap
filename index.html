@@ -86,9 +86,9 @@
                             { id: "terminology_zero_hypothesis_details", "background-color": "lightgreen", topic: "Zero Hypothesis", direction: "right" },
                             { id: "terminology_falsifiability_details", "background-color": "lightgreen", topic: "Falsifiability", direction: "right" },
                             {
-                                id: "terminology_causcorr_toggle_details", expanded: false, "background-color": "lightblue", topic: "Causylity vs. Correlation", direction: "right", children: [
+                                id: "terminology_causcorr_toggle", expanded: false, "background-color": "lightblue", topic: "Causylity vs. Correlation", direction: "right", children: [
 
-
+                                    { id: "terminology_causcorr_details", "background-color": "lightgreen", topic: "Causylity vs. Correlation", direction: "right", },
                                     { id: "terminology_causcorr_example1_details", "background-color": "lightgreen", topic: "Example 1: Autism & Organic food", direction: "right" },
                                     { id: "terminology_causcorr_example2_details", "background-color": "lightgreen", topic: "Example 2: Internet Explorer & murder", direction: "right" },
                                     { id: "terminology_causcorr_example3_details", "background-color": "lightgreen", topic: "Example 3: Mad cow disease & BREXIT", direction: "right" },
@@ -96,6 +96,30 @@
                             },
                             { id: "terminology_theory_details", "background-color": "lightgreen", topic: "Theory", direction: "right" },
 
+                        ]
+                    },
+
+                    {
+                        "id": "paradigmns_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Paradigms", direction: "right", children: [
+                            { "id": "paradigmns_modern_era", "topic": "Modern era", direction: "right", },
+                            { "id": "paradigmns_postmodern_era_details", "background-color": "lightgreen", "topic": "Post modern era", direction: "right", },
+                            { "id": "paradigmns_positivism_details", "background-color": "lightgreen", "topic": "Positivism", direction: "right", },
+                            { "id": "paradigmns_postpositivism_details", "background-color": "lightgreen", "topic": "Post-positivism", direction: "right", },
+                            { "id": "paradigmns_criticaltheory_details", "background-color": "lightgreen", "topic": "Critical Theory", direction: "right", },
+                            { "id": "paradigmns_feminism", "topic": "Feminism", direction: "right", },
+                            { "id": "paradigmns_constructivism_details", "background-color": "lightgreen", "topic": "Constructivism", direction: "right", },
+                            { "id": "paradigms_goodscience_details", "background-color": "lightgreen", "topic": "Good Science" }
+
+
+
+                        ]
+                    },
+                    {
+                        "id": "scientific_enterprise_toggle", expanded: false, "background-color": "lightblue", "topic": "Der Wissenschaftsbetrieb", direction: "right", children: [
+                            { id: "scientific_enterprise_academical_publishing", topic: "Academical Publishing", direction: "left" },
+                            { id: "scientific_enterprise_publish_perish_details", "background-color": "lightgreen", topic: "Publish or Perish", direction: "left" },
+
+                            { id: "scientific_enterprise_h_index_details", "background-color": "lightgreen", topic: "h-index", direction: "left" },
                         ]
                     }
 
@@ -125,12 +149,22 @@
             "terminology_hypothesis_details",
             "terminology_zero_hypothesis_details",
             "terminology_falsifiability_details",
-            "terminology_causcorr_toggle_details",
+            "terminology_causcorr_details",
             "terminology_causcorr_example1_details",
             "terminology_causcorr_example2_details",
             "terminology_causcorr_example3_details",
             "terminology_causcorr_example3_details",
-            "terminology_theory_details"
+            "terminology_theory_details",
+
+            "paradigmns_postmodern_era_details",
+            "paradigmns_positivism_details",
+            "paradigmns_postpositivism_details",
+            "paradigmns_criticaltheory_details",
+            "paradigmns_constructivism_details",
+            "paradigms_goodscience_details",
+
+            "scientific_enterprise_publish_perish_details",
+            "scientific_enterprise_h_index_details"
         ]
         var datablobswithdetails = {
             "history1_details": {
@@ -222,6 +256,7 @@ The distopia created by technology has been the topic of many books/tv-shows etc
                     </div>`,
                 background: "assets/orwell.jpg"
             },
+
             "method_examples1_details": {
                 topic: "John Snow and Cholera",
                 details: `<div class="details blacktransparent">
@@ -275,7 +310,260 @@ In the background you can see a related scenario to fitt's law: The accuracy of 
                     </div>`,
                 background: "assets/fitts_law_reused.jpg"
             },
-       
+
+            "terminology_hypothesis_details": {
+                topic: "Hypothesis",
+                details: `
+                <div class="details blacktransparent">
+                    <h3> Hypothesis </h3>
+                    <p>
+A Hypothesis is a statement, which is a possible explanation of a phenomenon.
+                    </p>
+                    <p>
+If you can not test a certain hypothesis it is not a "good" hypothesis. Only when one can proof/disproof a hypothesis it is a good scientific hypothesis.
+                    </p>
+                    <p>
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>`
+                ,
+                background: ""
+            },
+            "terminology_zero_hypothesis_details": {
+                topic: "Zero Hypothesis",
+                details: `
+                <div class="details blacktransparent">
+                    <h3> Zero Hypothesis </h3>
+                    <p>
+A zero hypothesis states, that there is no causal connection between two variables. <br>
+The goal of a study then is, to disproof that zero hypothesis.
+                    </p>
+                    <p>
+                        The term zero hypothesis is also often used in inference-statistics,
+                        when performing for example a two-sample t-test, which can check the possibility of that zero hypothesis being true.
+                    </p>
+                    <p>
+Take a look at "Falsifiability", to lern more about that topic.
+
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "terminology_falsifiability_details": {
+                topic: "Falsifiability",
+                details: `
+                <div class="details blacktransparent">
+                    <h3> Falsifiability </h3>
+                    <p>
+Karl Popper stated, that a Theory can not be proven, but only disproven.
+                    </p>
+                    <p>
+                      This really well combines with the zero hypothesis, since using the concept of falsifiybility, you do not try to prove the hypothesis you think is true, but rather disprove its opposite.
+                    </p>
+                    <p>
+
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "terminology_causcorr_details": {
+                topic: "Causality vs. Correlation",
+                details: `
+                <div class="details blacktransparent">
+                    <h3> Causality vs. Correlation </h3>
+                    <p>
+A relationship between two variables does not automatically mean, that there is a causal connection between that two variables. <br>
+This could just as well be a coincidence, or both be the result of something else (for example: the world population rises, death rise, more people have glasses. The conclusion that people die because of glasses is still not proven).
+                    </p>
+                    <p>
+                    Take a look at the examples below!
+                        </p>
+                    <p>
+
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "terminology_causcorr_example1_details": {
+                topic: "Example 1: Autism & Organic food",
+                details: `
+                <div class="details blacktransparent">
+                    <h3> Example 1: Autism & Organic food </h3>
+                   <img src="assets/autism_organic.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "terminology_causcorr_example2_details": {
+                topic: "Example 2: Internet Explorer & murder",
+                details: `
+                <div class="details blacktransparent">
+                    <h3> Example 2: Internet Explorer & murder </h3>
+                   <img src="assets/ie_murder.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "terminology_causcorr_example3_details": {
+                topic: "Example 3: Mad cow disease & BREXIT",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Example 3: Mad cow disease & BREXIT </h3>
+                   <img src="assets/mad_cow_brexit.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "terminology_theory_details": {
+                topic: "Theory",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Theory </h3>
+                   <p>
+If model and causality are backed up by trials, a theory will be created. That theory states the findings of the study and tries to generalize them. 
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+
+            "paradigmns_postmodern_era_details": {
+                topic: "Post modern era",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Modern era </h3>
+                   <p>
+                    In the post modern paradigm, the knowledge, that science is constructed by society is taken into consideration.
+                    </p>
+                    <p>
+The decision "what" we research is dependend from the context of the research.
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+            "paradigmns_positivism_details": {
+                topic: "Positivism",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Positivism </h3>
+                   <p>
+                   Positivism is the paradigm, that knowledge derives from measurable phenomenon.
+                    </p>
+                    <p>
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+            "paradigmns_postpositivism_details": {
+                topic: "Post-positivism",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Post-positivism </h3>
+                   <p>
+                  Post positivism tries to overcome the criticism to Positivism. It is based on Falsifiability, probabilities and tries to take the bias of scientists into consideration.
+                    </p>
+                    <p>
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+            "paradigmns_criticaltheory_details": {
+                topic: "Critical Theory",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Critical Theory </h3>
+                   <p>
+                 Critical thinking - as the name suggests - aims on critically questioning the circumstances behind a phenomenon. <br>
+                 Especially questioning the people behind studies and their possible objectives.
+                    </p>
+                    <p>
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+            "paradigmns_constructivism_details": {
+                topic: "Constructivism",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Constructivism </h3>
+                   <p>
+                    Constructivism is a view in the philosophy of science which maintains that scientific knowledge is constructed by the scientific community, who seek to measure and construct models of the natural world. According to the constructivist, natural science therefore consists of mental constructs that aim to explain sensory experience and measurements.
+                    </p>
+                    <p>
+                        </p>
+                    <a class="src" href="https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_science)">[Wikipedia am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+            "paradigms_goodscience_details": {
+                topic: "Good Science",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Good Science </h3>
+                   <p>
+                Good science consists of 3 paradigms:
+                <ul>
+<li>(Post-)Positivism</li>
+<li>Critical theory / Transformative</li>
+<li>Constructivism</li>
+                    </ul>
+                    </p>
+                    <p>
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `,
+                background: ""
+            },
+            "scientific_enterprise_publish_perish_details": {
+                topic: "Publish or perish",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Publish or perish </h3>
+                   <p>
+               The quality of science is often under pressure since through the pressure to publicate a lot of publications are not worth publicating.
+                    </p>
+                    <p>
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/der-wissenschaftsbetrieb/">[Aurora am 2.11.2020]</a>
+                    </div>
+                `},
+            "scientific_enterprise_h_index_details": {
+                topic: "h-index",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>h-index </h3>
+                   <p>
+             The h-index is an indicator, for how much and sucessful a researcher publishes.
+                    </p>
+                    <p>
+                        the numer given, lets call it x, gives how many papers the researcher has published with more than x citations by others.
+                        </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/der-wissenschaftsbetrieb/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://en.wikipedia.org/wiki/H-index">[Wikipedia am 2.11.2020]</a>
+
+                    </div>
+                `}
+
         }
 
         function hidedetails(idtoexclude) {

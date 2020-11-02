@@ -59,25 +59,43 @@
                     },
 
                     {
-                        "id": "method_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Method", direction: "left", children: [
+                        "id": "method_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Scientific method", direction: "left", children: [
                             {
                                 id: "method_abstraction_toggle", expanded: false, "background-color": "lightblue", "topic": "Abstraction", direction: "left", children: [
-                                    { id: "method_abstrction1_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
-                                    { id: "method_abstrction2_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
-                                    { id: "method_abstrction3_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
-                                    { id: "method_abstrction4_details", "background-color": "lightgreen", topic: "Method Abstraction1", direction: "left" },
+                                    { id: "method_abstrction1", topic: "1. Observation of a phenomenon", direction: "left" },
+                                    { id: "method_abstrction2", topic: "2. Investigation of different explanation", direction: "left" },
+                                    { id: "method_abstrction3", topic: "3. Drawing conclusions", direction: "left" },
+                                    { id: "method_abstrction4", topic: "4. Conclucions become knowledge", direction: "left" },
 
                                 ]
                             },
                             {
                                 id: "method_examples_toggle", expanded: false, "background-color": "lightblue", "topic": "Examples", direction: "left", children: [
-                                    { id: "method_examples1_details", "background-color": "lightgreen", topic: "Method Example 1", direction: "left" },
-                                    { id: "method_examples2_details", "background-color": "lightgreen", topic: "Method Example 2", direction: "left" },
-                                    { id: "method_examples3_details", "background-color": "lightgreen", topic: "Method Example 3", direction: "left" },
-                                    { id: "method_examples4_details", "background-color": "lightgreen", topic: "Method Example 4", direction: "left" },
+                                    { id: "method_examples1_details", "background-color": "lightgreen", topic: "Jon Snow and Colera", direction: "left" },
+                                    { id: "method_examples2_details", "background-color": "lightgreen", topic: "Newton and gravity", direction: "left" },
+                                    { id: "method_examples3_details", "background-color": "lightgreen", topic: "Fitts Law", direction: "left" },
 
                                 ]
                             }
+                        ]
+                    },
+
+                    {
+                        "id": "terminology_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Terminology", direction: "right", children: [
+                            { id: "terminology_hypothesis_details", "background-color": "lightgreen", topic: "Hypothesis", direction: "right" },
+                            { id: "terminology_zero_hypothesis_details", "background-color": "lightgreen", topic: "Zero Hypothesis", direction: "right" },
+                            { id: "terminology_falsifiability_details", "background-color": "lightgreen", topic: "Falsifiability", direction: "right" },
+                            {
+                                id: "terminology_causcorr_toggle_details", expanded: false, "background-color": "lightblue", topic: "Causylity vs. Correlation", direction: "right", children: [
+
+
+                                    { id: "terminology_causcorr_example1_details", "background-color": "lightgreen", topic: "Example 1: Autism & Organic food", direction: "right" },
+                                    { id: "terminology_causcorr_example2_details", "background-color": "lightgreen", topic: "Example 2: Internet Explorer & murder", direction: "right" },
+                                    { id: "terminology_causcorr_example3_details", "background-color": "lightgreen", topic: "Example 3: Mad cow disease & BREXIT", direction: "right" },
+                                ]
+                            },
+                            { id: "terminology_theory_details", "background-color": "lightgreen", topic: "Theory", direction: "right" },
+
                         ]
                     }
 
@@ -101,22 +119,163 @@
             "history3_details",
             "history4_details",
             "history5_details",
-            "method_abstrction1_details",
-            "method_abstrction2_details",
-            "method_abstrction3_details",
-            "method_abstrction4_details"
+            "method_examples1_details",
+            "method_examples2_details",
+            "method_examples3_details",
+            "terminology_hypothesis_details",
+            "terminology_zero_hypothesis_details",
+            "terminology_falsifiability_details",
+            "terminology_causcorr_toggle_details",
+            "terminology_causcorr_example1_details",
+            "terminology_causcorr_example2_details",
+            "terminology_causcorr_example3_details",
+            "terminology_causcorr_example3_details",
+            "terminology_theory_details"
         ]
+        var datablobswithdetails = {
+            "history1_details": {
+                topic: "Plato (aesthetics, ethics, truth)",
+                details: `<div class="details blacktransparent">
+                    <h3>Plato</h3>
+                    <p>
+Back in Platos time, Aesthetics, ethics and the truth were not be seen as differenct by definition, but to be deeply interwoven with each other.
+                    </p>
+                    <p>
+Today those things are often viewed very seperate. Click the next history-boxes to find out how history has influenced that seperation.
+                    </p>
+                    <p>
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    </div>`,
+                background: ""
 
-        var details = {
-            "history1_details": "<div class=\"details\"> This are the details of history 1 </div>",
-            "history2_details": "<div class=\"details\"> This are the details of history 2 </div>",
-            "history3_details": "<div class=\"details\"> This are the details of history 3 </div>",
-            "history4_details": "<div class=\"details\"> This are the details of history 4 </div>",
-            "history5_details": "<div class=\"details\"> This are the details of history 5 </div>",
-            "method_abstrction1_details": "<div class=\"details\"><p> This are the details of method abstraction 1 asdfgafhsfhgdfg test test test test test test test test</p></div>",
-            "method_abstrction2_details": "<div class=\"details\"> This are the details of method abstraction 2 </div>",
-            "method_abstrction3_details": "<div class=\"details\"> This are the details of method abstraction 3 </div>",
-            "method_abstrction4_details": "<div class=\"details\"> This are the details of method abstraction 4 </div>"
+            },
+            "history2_details": {
+                topic: "The pope and the King",
+                details: `<div class="details blacktransparent">
+                    <h3>The pope and the King</h3>
+                    <p>
+In the middle ages, the truth was definen by either what the pope or what the king said. <br>
+There was no point in arguing, if you had interest in continuing your life.
+                    </p>
+                    <p>
+                        This changed at around 1500, when byzantium fell, and its knowledge (mostly in form of books) reached central europe.<br>
+                        At the latests with the invention of the Letterpress, the monopole of knowledge disintegrated.
+                    </p>
+                    <p>
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    </div>`,
+                background: ""
+            },
+            "history3_details": {
+                topic: "Enlightment era",
+                details: `<div class="details blacktransparent">
+                    <h3>Enlightment era</h3>
+                    <p>
+During the enlightment era many famous philosophers contributed to create a "enlighted society". <br>
+They were not only discussing specific scientific phenomenas, but also bigger, philosophical things, like how ony could understand the world.
+                    </p>
+                    <p>
+                        A very important note is, that science was living from discourse from the beginning. 
+                    </p>
+                    <p>
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    </div>`,
+                background: "assets/enlightment_era.jpg"
+            },
+            "history4_details": {
+                topic: "French revolution",
+                details: `<div class="details blacktransparent">
+                    <h3>French revolution</h3>
+                    <p>
+The french revolution can be seen as the height of the scientific and social revolution.
+                    </p>
+                    <p>
+                        The fact, that knowledge could be created by everyone changed the feeling of the people in terms of power. 
+                    </p>
+                    <p>
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://en.wikipedia.org/wiki/French_Revolution#/media/File:Anonymous_-_Prise_de_la_Bastille.jpg">[Wikipedia am 2.11.2020]</a>
+
+                    </div>`,
+                background: "assets/french_revolution.jpg"
+            },
+            "history5_details": {
+                topic: "Early criticism and distopia",
+                details: `<div class="details blacktransparent">
+                    <h3>Early criticism</h3>
+                    <p>
+The distopia created by technology has been the topic of many books/tv-shows etc. For example Orwell created a book in 1948, which covered the upcoming problem of mass surveillance.
+                    </p>
+                    <p>
+                        This topic has since been critically looked at, for example in the famous tv-show "black mirror", which presents the disturbing idea of a social score system.
+                    </p>
+                    <p>
+                        The shocking truth is, that mass surveillance systems like those are not far from reality. China for example has been implementing a comparable system in the last few years.
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://en.wikipedia.org/wiki/Mass_surveillance_in_China">[Wikipedia am 2.11.2020]</a>
+
+                    </div>`,
+                background: "assets/orwell.jpg"
+            },
+            "method_examples1_details": {
+                topic: "John Snow and Cholera",
+                details: `<div class="details blacktransparent">
+                    <h3> John Snow and Cholera </h3>
+                    <p>
+During a Cholera outbreak in London, John Snow analyzed the pattern and clusters of the single cases.  
+                    </p>
+                    <p>
+While no one knew how cholera was transmitted John was still able to find the source of the outbreak to be a contaminated waterpump.
+                    </p>
+                    <p>
+His findins were rejected by the government out of political reasons: They did not want the public to fear from the oral-faecal transmission method.
+                    </p>
+                    <a class="src" href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak">[Wikipedia am 2.11.2020]</a>
+                    </div>`,
+                background: "assets/1024px-Snow-cholera-map-1.jpg",
+            },
+            "method_examples2_details": {
+                topic: "Newton and gravity",
+                details: `<div class="details blacktransparent">
+                    <h3> Newton and gravity </h3>
+                    <p>
+A prominent example for scientific is the myth of Newton being hit by an apple on the head, which then lead to the discovery of gravity.
+                    </p>
+                    <p>
+By saying "If i have seen further it is by standing on the shoulders of Giants", Newton pointed out, that new knowledge depends on previous findings. New knowledge thus is <b>not</b> created in context-free space.
+                    </p>
+                    <p>
+
+                    </p>
+                    <a class="src" href="https://en.wikipedia.org/wiki/Isaac_Newton">[Wikipedia am 2.11.2020]</a> 
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/die-wissenschafltiche-methode/">[Aurora am 2.11.2020]</a>
+                    </div>`,
+                background: "assets/Sir_Isaac_Newton.jpg"
+            },
+            "method_examples3_details": {
+                topic: "Fitts Law",
+                details: `<div class="details blacktransparent">
+                    <h3> Fitts Law </h3>
+                    <p>
+Fitts Law describes the correlation between the time a user needs to move a cursor to a target with a given size in a given distance.
+                    </p>
+                    <p>
+Whilst this experiment was performed in the 1950s, it still influences UI-Design in the present.
+                    </p>
+                    <p>
+In the background you can see a related scenario to fitt's law: The accuracy of a press on a smartphone display.
+                    </p>
+                    <a class="src" href="https://en.wikipedia.org/wiki/Isaac_Newton">[Wikipedia am 2.11.2020]</a> 
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/die-wissenschafltiche-methode/">[Aurora am 2.11.2020]</a>
+                    </div>`,
+                background: "assets/fitts_law_reused.jpg"
+            },
+       
         }
 
         function hidedetails(idtoexclude) {
@@ -124,10 +283,12 @@
 
                 if (idtoexclude != id) {
                     let node = jm.mind.get_node(id);
-                    if (node.topic.indexOf("<div class=\"details\">") >= 0) {
-                        let indexof = node.topic.indexOf("<div class=\"details\">");
+                    if (node.topic.indexOf("<div class=\"details") >= 0) {
                         jm.enable_edit();
-                        jm.update_node(id, node.topic.substring(0, indexof));
+                        jm.update_node(id, datablobswithdetails[id].topic);
+                        if (datablobswithdetails[id].background) {
+                            jm.set_node_background_image(id, ' ', 0, 0)
+                        }
                         jm.disable_edit();
                     }
                 }
@@ -145,11 +306,12 @@
                     if (data.node) {
                         jm.toggle_node(data.node);
                     }
-                } else if (data.node.indexOf("details") >= 0) {
-                    var selected_node = jm.get_selected_node();
-
+                }
+                if (data.node.indexOf("details") >= 0) {
                     jm.enable_edit();
-                    jm.update_node(data.node, selected_node.topic + details[data.node])
+                    jm.update_node(data.node, datablobswithdetails[data.node].details)
+                    if (datablobswithdetails[data.node].background)
+                        jm.set_node_background_image(data.node, datablobswithdetails[data.node].background)
                     jm.disable_edit();
                 } else {
 

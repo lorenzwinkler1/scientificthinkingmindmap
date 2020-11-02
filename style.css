@@ -4,7 +4,6 @@ html {
   padding: 0;
   height: 100%;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-
 }
 #jsmind-container {
   height: 100%;
@@ -14,6 +13,22 @@ html {
   max-width: 420px;
   /* width: 400px; */
   white-space: normal;
+  margin:0px;
+  padding:10px;
+}
+.details > h3{
+  margin-top:0px;
+}
+
+.detailswimage {
+  width: 400px;
+}
+.blacktransparent{
+background-color: rgba(0, 0, 0, 0.6);
+color:white;
+}
+.blacktransparent > a{
+  color:white;
 }
 .legend {
   position: fixed;
@@ -21,7 +36,7 @@ html {
   bottom: 15px;
   display: flex;
   flex-direction: column;
-  font-size:13pt;
+  font-size: 13pt;
   user-select: none;
 }
 .legendentry {

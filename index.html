@@ -22,7 +22,7 @@
 
             </div>
             <div class="legendentrydescription">
-                Click to expand
+                Klicken zum ausklappen
             </div>
         </div>
         <div class="legendentry">
@@ -30,7 +30,7 @@
 
             </div>
             <div class="legendentrydescription">
-                Click to get some extra details
+                Klicken für Details
             </div>
         </div>
 
@@ -40,89 +40,47 @@
     <script type="text/javascript">
         var mind = {
             "meta": {
-                "name": "Scientific Thinking",
-                "Author": "Lorenz Winkler"
+                "name": "Computational Thinking",
+                "Author": "Maximilian Selle"
             },
             "format": "node_tree",
             "data":
             {
-                "id": "root", "isroot": true, "topic": "Scientific Thinking", children: [
+                "id": "root", "isroot": true, "topic": "Computational Thinking", children: [
                     {
-                        "id": "history_main_toggle", expanded: false, "isroot": false, "topic": "History", "background-color": "lightblue", direction: "left", children: [
-                            { id: "history1_details", "background-color": "lightgreen", topic: "Plato (aesthetics, ethics, truth)", direction: "left" },
-                            { id: "history2_details", "background-color": "lightgreen", topic: "The pope and the King", direction: "left" },
-                            { id: "history3_details", "background-color": "lightgreen", topic: "Enlightment era", direction: "left" },
-                            { id: "history4_details", "background-color": "lightgreen", topic: "French revolution", direction: "left" },
-                            { id: "history5_details", "background-color": "lightgreen", topic: "Criticism and distopia", direction: "left" },
-
-                        ]
-                    },
-
-                    {
-                        "id": "method_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Scientific method", direction: "left", children: [
+                        "id": "history_main_toggle", expanded: false, "isroot": false, "topic": "Historische Entwicklung", "background-color": "lightblue", direction: "left", children: [
+                            { id: "history1_details", "background-color": "lightgreen", topic: "Charles Babbage", direction: "left" },
+                            { id: "history2_details", "background-color": "lightgreen", topic: "Wilhelm Leibniz", direction: "left" },
+                            { id: "history3_details", "background-color": "lightgreen", topic: "Ada Lovelace", direction: "left" },
+                            { id: "history4_details", "background-color": "lightgreen", topic: "Enigma und die Bombe", direction: "left" },
                             {
-                                id: "method_abstraction_toggle", expanded: false, "background-color": "lightblue", "topic": "Abstraction", direction: "left", children: [
-                                    { id: "method_abstrction1", topic: "1. Observation of a phenomenon", direction: "left" },
-                                    { id: "method_abstrction2", topic: "2. Investigation of different explanation", direction: "left" },
-                                    { id: "method_abstrction3", topic: "3. Drawing conclusions", direction: "left" },
-                                    { id: "method_abstrction4", topic: "4. Conclucions become knowledge", direction: "left" },
+                              id: "Softwareentwicklung_toggle", expanded: false, "background-color": "lightblue", topic: "Softwareentwicklung", direction: "left", children: [
 
+                                        { id: "sedetails1", "background-color": "lightgreen", topic: "ENIAC", direction: "left", },
+                                        { id: "sedetails2", "background-color": "lightgreen", topic: "writing software", direction: "left" },
+                                        { id: "sedetails3", "background-color": "lightgreen", topic: "building software", direction: "left" },
+                                        { id: "sedetails4", "background-color": "lightgreen", topic: "growing software", direction: "left" },
                                 ]
                             },
-                            {
-                                id: "method_examples_toggle", expanded: false, "background-color": "lightblue", "topic": "Examples", direction: "left", children: [
-                                    { id: "method_examples1_details", "background-color": "lightgreen", topic: "Jon Snow and Colera", direction: "left" },
-                                    { id: "method_examples2_details", "background-color": "lightgreen", topic: "Newton and gravity", direction: "left" },
-                                    { id: "method_examples3_details", "background-color": "lightgreen", topic: "Fitts Law", direction: "left" },
 
-                                ]
-                            }
                         ]
                     },
 
-                    {
-                        "id": "terminology_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Terminology", direction: "right", children: [
-                            { id: "terminology_hypothesis_details", "background-color": "lightgreen", topic: "Hypothesis", direction: "right" },
-                            { id: "terminology_zero_hypothesis_details", "background-color": "lightgreen", topic: "Zero Hypothesis", direction: "right" },
-                            { id: "terminology_falsifiability_details", "background-color": "lightgreen", topic: "Falsifiability", direction: "right" },
-                            {
-                                id: "terminology_causcorr_toggle", expanded: false, "background-color": "lightblue", topic: "Causylity vs. Correlation", direction: "right", children: [
 
-                                    { id: "terminology_causcorr_details", "background-color": "lightgreen", topic: "Causylity vs. Correlation", direction: "right", },
-                                    { id: "terminology_causcorr_example1_details", "background-color": "lightgreen", topic: "Example 1: Autism & Organic food", direction: "right" },
-                                    { id: "terminology_causcorr_example2_details", "background-color": "lightgreen", topic: "Example 2: Internet Explorer & murder", direction: "right" },
-                                    { id: "terminology_causcorr_example3_details", "background-color": "lightgreen", topic: "Example 3: Mad cow disease & BREXIT", direction: "right" },
+                    {
+                        "id": "whatis_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Was ist computational thinking?", direction: "right", children: [
+                            { id: "jane_wing_details", "background-color": "lightgreen", topic: "Definition", direction: "right" },    
+                            { id: "3as_details", "background-color": "lightgreen", topic: "Drei A's", direction: "right" },
+                            {
+                                id: "whatis_examples_toggle", expanded: false, "background-color": "lightblue", topic: "Beispiele", direction: "right", children: [
+
+                                    { id: "whatis_example1_details", "background-color": "lightgreen", topic: "Shotgun Sequencing", direction: "right" },
+                                    { id: "whatis_example2_details", "background-color": "lightgreen", topic: "Monty Hall Problem", direction: "right" },
                                 ]
                             },
-                            { id: "terminology_theory_details", "background-color": "lightgreen", topic: "Theory", direction: "right" },
 
                         ]
                     },
-
-                    {
-                        "id": "paradigmns_main_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Paradigms", direction: "right", children: [
-                            { "id": "paradigmns_modern_era", "topic": "Modern era", direction: "right", },
-                            { "id": "paradigmns_postmodern_era_details", "background-color": "lightgreen", "topic": "Post modern era", direction: "right", },
-                            { "id": "paradigmns_positivism_details", "background-color": "lightgreen", "topic": "Positivism", direction: "right", },
-                            { "id": "paradigmns_postpositivism_details", "background-color": "lightgreen", "topic": "Post-positivism", direction: "right", },
-                            { "id": "paradigmns_criticaltheory_details", "background-color": "lightgreen", "topic": "Critical Theory", direction: "right", },
-                            { "id": "paradigmns_feminism", "topic": "Feminism", direction: "right", },
-                            { "id": "paradigmns_constructivism_details", "background-color": "lightgreen", "topic": "Constructivism", direction: "right", },
-                            { "id": "paradigms_goodscience_details", "background-color": "lightgreen", "topic": "Good Science" }
-
-
-
-                        ]
-                    },
-                    {
-                        "id": "scientific_enterprise_toggle", expanded: false, "background-color": "lightblue", "topic": "Der Wissenschaftsbetrieb", direction: "right", children: [
-                            { id: "scientific_enterprise_academical_publishing", topic: "Academical Publishing", direction: "left" },
-                            { id: "scientific_enterprise_publish_perish_details", "background-color": "lightgreen", topic: "Publish or Perish", direction: "left" },
-
-                            { id: "scientific_enterprise_h_index_details", "background-color": "lightgreen", topic: "h-index", direction: "left" },
-                        ]
-                    }
-
                 ]
             }
 
@@ -142,426 +100,217 @@
             "history2_details",
             "history3_details",
             "history4_details",
-            "history5_details",
-            "method_examples1_details",
-            "method_examples2_details",
-            "method_examples3_details",
-            "terminology_hypothesis_details",
-            "terminology_zero_hypothesis_details",
-            "terminology_falsifiability_details",
-            "terminology_causcorr_details",
-            "terminology_causcorr_example1_details",
-            "terminology_causcorr_example2_details",
-            "terminology_causcorr_example3_details",
-            "terminology_causcorr_example3_details",
-            "terminology_theory_details",
+            "sedetails1",
+            "sedetails2",
+            "sedetails3",
+            "sedetails4",
+            "3as_details",
+            "jane_wing_details",
+            "whatis_example1_details",
+            "whatis_example2_details",
 
-            "paradigmns_postmodern_era_details",
-            "paradigmns_positivism_details",
-            "paradigmns_postpositivism_details",
-            "paradigmns_criticaltheory_details",
-            "paradigmns_constructivism_details",
-            "paradigms_goodscience_details",
-
-            "scientific_enterprise_publish_perish_details",
-            "scientific_enterprise_h_index_details"
         ]
         var datablobswithdetails = {
             "history1_details": {
-                topic: "Plato (aesthetics, ethics, truth)",
+                topic: "Charles Babbage",
                 details: `<div class="details blacktransparent">
-                    <h3>Plato</h3>
+                    <h3>Charles Babbage (1791-1871)</h3>
                     <p>
-Back in Platos time, Aesthetics, ethics and the truth were not be seen as differenct by definition, but to be deeply interwoven with each other.
+War Mathematiker, Philosoph, Wirtschaftswissenschaftler und Erfinder.
                     </p>
                     <p>
-Today those things are often viewed very seperate. Click the next history-boxes to find out how history has influenced that seperation.
+Er baute die difference machine, welche im wesentlichen eine sehr fortgeschrittene Rechenmaschine war. <br>
+Zweck dieser Maschine war die Berechnung von Polynomen für Logarithmentafeln. <br>
                     </p>
                     <p>
+Die Arbeit an der difference engine führte Babbage zu einem weiteren Projekt: die analytical engine. <br>
+Dieses Konzept wurde nie realisiert und es wäre mit dem damaligen technischen Stand auch nicht möglich gewesen.
+Sie wird der älteste Computer genannt auch wenn sie nie gebaut wurde.
                     </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: ""
+                background: "assets/babagge.jpg"
 
             },
             "history2_details": {
-                topic: "The pope and the King",
+                topic: "Wilhelm Leibniz",
                 details: `<div class="details blacktransparent">
-                    <h3>The pope and the King</h3>
+                    <h3>Wilhelm Leibniz (1646-1716) </h3>
                     <p>
-In the middle ages, the truth was definen by either what the pope or what the king said. <br>
-There was no point in arguing, if you had interest in continuing your life.
+Erfand schon früher einen Mechanismus für den 10er-Übertrag, welchen er in seine "vier-spezies Rechenmaschine" einbaute. <br>
+Die selben Funktionsprinzipien wurden später auch in der analytical enginge von Charles Babbage verwendet.
                     </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <p>
-                        This changed at around 1500, when byzantium fell, and its knowledge (mostly in form of books) reached central europe.<br>
-                        At the latests with the invention of the Letterpress, the monopole of knowledge disintegrated.
                     </p>
-                    <p>
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: ""
+                background: "assets/leibniz.jpg"
             },
             "history3_details": {
-                topic: "Enlightment era",
+                topic: "Ada Lovelace",
                 details: `<div class="details blacktransparent">
-                    <h3>Enlightment era</h3>
+                    <h3>Ada Lovelace (1815-1852)</h3>
                     <p>
-During the enlightment era many famous philosophers contributed to create a "enlighted society". <br>
-They were not only discussing specific scientific phenomenas, but also bigger, philosophical things, like how ony could understand the world.
+Sie erkannte als erste die Universalität des Entwurfs von Charles Babbage und schrieb die ersten "Programme" für die nur theoretisch existierende Maschine.
+
                     </p>
                     <p>
-                        A very important note is, that science was living from discourse from the beginning. 
+Lange Zeit war man sich nicht sicher, ob sie die Ihr zugeschriebenen Leistungen tatsächlich erbracht hat, die Dokumentation der Leistungen von Frauen zur damaligen Zeit nicht wirkliche Priorität hatte. <br>
                     </p>
                     <p>
+Aber heute weiß man, dass sie einen wesentlichen Beitrag zur analytical enginge gebracht hat und die Programmiersprache ada ist nach ihr benannt.
                     </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: "assets/enlightment_era.jpg"
+                background: "assets/lovelace.jpg"
             },
             "history4_details": {
-                topic: "French revolution",
+                topic: "Enigma und die Bombe",
                 details: `<div class="details blacktransparent">
-                    <h3>French revolution</h3>
+                    <h3>Enigma und die Bombe</h3>
                     <p>
-The french revolution can be seen as the height of the scientific and social revolution.
+Enigma war eine Entwicklung Deutschlands mit deren Hilfe sie im zweiten Weltkrieg ihre Nachrichten verschlüsselten.
                     </p>
                     <p>
-                        The fact, that knowledge could be created by everyone changed the feeling of the people in terms of power. 
+Da es dan Alliierten nicht gelang die Nachrichten per Hand zu entschlüsseln, begann man an einer technischen Lösung zu arbeiten. <br>
+Eine zentrale Figur in diesem Prozess war Alan Turing. Er beschrieb die erste Idee eines "general purpose computers". <br>
+Seine Theorien und Ideen zählen bis heute zum Fundament der Informatik.
+                    <img src="assets/turingbursch.jpg" width="220" height="290">
                     </p>
-                    <p>
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
-                    <a class="src" href="https://en.wikipedia.org/wiki/French_Revolution#/media/File:Anonymous_-_Prise_de_la_Bastille.jpg">[Wikipedia am 2.11.2020]</a>
-
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: "assets/french_revolution.jpg"
+                background: "assets/bomb.jpg"
             },
-            "history5_details": {
-                topic: "Early criticism and distopia",
+            "sedetails1": {
+                topic: "ENIAC",
                 details: `<div class="details blacktransparent">
-                    <h3>Early criticism</h3>
+                    <h3>ENIAC</h3>
                     <p>
-The distopia created by technology has been the topic of many books/tv-shows etc. For example Orwell created a book in 1948, which covered the upcoming problem of mass surveillance.
+Der erste Computer der sowohl gebaut als auch "general purpose" war, war ENIAC.
                     </p>
                     <p>
-                        This topic has since been critically looked at, for example in the famous tv-show "black mirror", which presents the disturbing idea of a social score system.
+Er wurde als "special purpose" in Auftrag gegeben, man sich jedoch dazu die Mittel für einen programmierbaren Universalrechner zu verwenden, der programmiert werden konnte
                     </p>
                     <p>
-                        The shocking truth is, that mass surveillance systems like those are not far from reality. China for example has been implementing a comparable system in the last few years.
+In Stammbäumen findet sich ENIAC oft als "Stamm" auf dem alles andere Aufbaut.
                     </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/intro-slides/">[Aurora am 2.11.2020]</a>
-                    <a class="src" href="https://en.wikipedia.org/wiki/Mass_surveillance_in_China">[Wikipedia am 2.11.2020]</a>
-
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: "assets/orwell.jpg"
+                background: "assets/pctree.jpg"
             },
-
-            "method_examples1_details": {
-                topic: "John Snow and Cholera",
+            "sedetails2": {
+                topic: "writing software",
                 details: `<div class="details blacktransparent">
-                    <h3> John Snow and Cholera </h3>
+                    <h3>Writing Software</h3>
                     <p>
-During a Cholera outbreak in London, John Snow analyzed the pattern and clusters of the single cases.  
+Damals wurde software wie ein Text geschrieben. Diese Herangehensweise funktionierte bei Polynomen noch gut, kam aber schnell an ihre Grenzen.
                     </p>
                     <p>
-While no one knew how cholera was transmitted John was still able to find the source of the outbreak to be a contaminated waterpump.
+Mit steigender Rechenleistung und Komplexität der Programme wurde Software teurer als Hardware. <br>
+Auf der NATO software engingeering conference 1969 wurde das schreiben von Software als eine Ingenieursdisziplin definiert.<br>
+Man erhoffte sich dadurch eine Industrialisierung der Software-Produktion.
                     </p>
-                    <p>
-His findins were rejected by the government out of political reasons: They did not want the public to fear from the oral-faecal transmission method.
-                    </p>
-                    <a class="src" href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak">[Wikipedia am 2.11.2020]</a>
+                    <img src="assets/waterfall.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: "assets/1024px-Snow-cholera-map-1.jpg",
+                background: "assets/wbg.jpg"
             },
-            "method_examples2_details": {
-                topic: "Newton and gravity",
+            "sedetails3": {
+                topic: "building software",
                 details: `<div class="details blacktransparent">
-                    <h3> Newton and gravity </h3>
+                    <h3>Building Software</h3>
                     <p>
-A prominent example for scientific is the myth of Newton being hit by an apple on the head, which then lead to the discovery of gravity.
+Software wird nicht mehr geschrieben, sie wird konstruiert, nach vorgegebenen Abläufen und strukturierten Vorgehensweisen folgend. 
                     </p>
-                    <p>
-By saying "If i have seen further it is by standing on the shoulders of Giants", Newton pointed out, that new knowledge depends on previous findings. New knowledge thus is <b>not</b> created in context-free space.
-                    </p>
-                    <p>
-
-                    </p>
-                    <a class="src" href="https://en.wikipedia.org/wiki/Isaac_Newton">[Wikipedia am 2.11.2020]</a> 
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/die-wissenschafltiche-methode/">[Aurora am 2.11.2020]</a>
+                    <img src="assets/scrum.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: "assets/Sir_Isaac_Newton.jpg"
+                background: "assets/wbg.jpg"
             },
-            "method_examples3_details": {
-                topic: "Fitts Law",
+            "sedetails4": {
+                topic: "growing software",
                 details: `<div class="details blacktransparent">
-                    <h3> Fitts Law </h3>
+                    <h3>Growing Software</h3>
                     <p>
-Fitts Law describes the correlation between the time a user needs to move a cursor to a target with a given size in a given distance.
+Man sollte programmieren nicht nur als Umsetzung sehen, sondern als Prozess der Erkenntnis.
                     </p>
                     <p>
-Whilst this experiment was performed in the 1950s, it still influences UI-Design in the present.
+Bis heute funktioniert Softwareentwicklung nicht zuverlässig gut und man ist sich dessen bewusst.
                     </p>
-                    <p>
-In the background you can see a related scenario to fitt's law: The accuracy of a press on a smartphone display.
+                    <p>                       
                     </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/die-wissenschafltiche-methode/">[Aurora am 2.11.2020]</a>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/die-idee-des-programmierens/">[Aurora am 17.11.2020]</a>
                     </div>`,
-                background: "assets/fitts_law_reused.jpg"
+                background: "assets/wbg.jpg"
             },
-
-            "terminology_hypothesis_details": {
-                topic: "Hypothesis",
+                "3as_details": {
+                topic: "Drei A's",
                 details: `
                 <div class="details blacktransparent">
-                    <h3> Hypothesis </h3>
+                    <h3> Drei A's </h3>
                     <p>
-A Hypothesis is a statement, which is a possible explanation of a phenomenon.
+Die ursprünglichen zwei A's wurden mittlerweile um ein drittes A erweitert um die iterative Natur von realem Problemlösen zu reflektieren.
                     </p>
-                    <p>
-If you can not test a certain hypothesis it is not a "good" hypothesis. Only when one can proof/disproof a hypothesis it is a good scientific hypothesis.
-                    </p>
-                    <p>
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    <img src="assets/3as.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/was-ist-computational-thinking/">[Aurora am 17.11.2020]</a>
                     </div>`
                 ,
                 background: ""
             },
-            "terminology_zero_hypothesis_details": {
-                topic: "Zero Hypothesis",
+            "jane_wing_details": {
+                topic: "Definition",
                 details: `
                 <div class="details blacktransparent">
-                    <h3> Zero Hypothesis </h3>
+                    <h3> Definition </h3>
                     <p>
-A zero hypothesis states, that there is no causal connection between two variables. <br>
-The goal of a study then is, to disproof that zero hypothesis.
-                    </p>
-                    <p>
-                        The term zero hypothesis is also often used in inference-statistics,
-                        when performing for example a two-sample t-test, which can check the possibility of that zero hypothesis being true.
-                    </p>
-                    <p>
-Take a look at "Falsifiability", to lern more about that topic.
+"…the thought processes involved in formulating problems and their solutions so that the solutions are represented in a form that can effectively be carried out by an information processing agent. […] the use of computational concepts, methods and tools transform the very conduct of every discipline, profession and sector. Someone with the ability to use computation effectively would have an edge over someone without."
 
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                    <img src="assets/wing.jpg" width="220" height="320"> (jeannette wing) <br>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/was-ist-computational-thinking/">[Aurora am 17.11.2020]</a>
                     </div>
                     `,
                 background: ""
             },
-            "terminology_falsifiability_details": {
-                topic: "Falsifiability",
+            "whatis_example1_details": {
+                topic: "Shotgun Sequencing",
                 details: `
                 <div class="details blacktransparent">
-                    <h3> Falsifiability </h3>
+                    <h3> Shotgun Sequencing </h3>
                     <p>
-Karl Popper stated, that a Theory can not be proven, but only disproven.
-                    </p>
-                    <p>
-                      This really well combines with the zero hypothesis, since using the concept of falsifiybility, you do not try to prove the hypothesis you think is true, but rather disprove its opposite.
-                    </p>
-                    <p>
-
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                        Shotgun Sequencing ist ein Verfahren zur Sequenzierung von Genomen, bei dem viele geklonte Genome in max. 1000 basenpaare lange, und damit sequenzierbare Einzelteile zerlegt werden, um die Ergebnisse mit Hilfe eines Computers und Muster Erkennung dann wieder zu einem kompletten Genom zusammenzusetzen.
+                   </p>
+                   <img src="assets/shotgun.jpg" width="380" height="266">
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/was-ist-computational-thinking/">[Aurora am 17.11.2020]</a>
                     </div>
                     `,
                 background: ""
             },
-            "terminology_causcorr_details": {
-                topic: "Causality vs. Correlation",
+            "whatis_example2_details": {
+                topic: "Monty Hall Problem",
                 details: `
                 <div class="details blacktransparent">
-                    <h3> Causality vs. Correlation </h3>
+                    <h3> Monty Hall Problem</h3>
                     <p>
-A relationship between two variables does not automatically mean, that there is a causal connection between that two variables. <br>
-This could just as well be a coincidence, or both be the result of something else (for example: the world population rises, death rise, more people have glasses. The conclusion that people die because of glasses is still not proven).
+                        Ich lasse sie aus drei Schachteln eine auswählen. in einer ist eine perle, und in den anderen beiden jeweils eine Erbse. wenn ich ihnen, nachdem sie getippt haben, eine Schachtel zeige, die nicht die ist, die sie gewählt haben, und in der eine Erbse ist - würden sie ihren Tipp dann ändern?
                     </p>
-                    <p>
-                    Take a look at the examples below!
-                        </p>
-                    <p>
-
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
+                   <img src="assets/monty.jpg" width="220" height="355"> <br>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_9.11.2020/was-ist-computational-thinking/">[Aurora am 17.11.2020]</a>
                     </div>
                     `,
                 background: ""
             },
-            "terminology_causcorr_example1_details": {
-                topic: "Example 1: Autism & Organic food",
-                details: `
-                <div class="details blacktransparent">
-                    <h3> Example 1: Autism & Organic food </h3>
-                   <img src="assets/autism_organic.jpg" width="380" height="266">
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                    `,
-                background: ""
-            },
-            "terminology_causcorr_example2_details": {
-                topic: "Example 2: Internet Explorer & murder",
-                details: `
-                <div class="details blacktransparent">
-                    <h3> Example 2: Internet Explorer & murder </h3>
-                   <img src="assets/ie_murder.jpg" width="380" height="266">
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                    `,
-                background: ""
-            },
-            "terminology_causcorr_example3_details": {
-                topic: "Example 3: Mad cow disease & BREXIT",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Example 3: Mad cow disease & BREXIT </h3>
-                   <img src="assets/mad_cow_brexit.jpg" width="380" height="266">
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                    `,
-                background: ""
-            },
-            "terminology_theory_details": {
-                topic: "Theory",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Theory </h3>
-                   <p>
-If model and causality are backed up by trials, a theory will be created. That theory states the findings of the study and tries to generalize them. 
-                    </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/begriffe-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-
-            "paradigmns_postmodern_era_details": {
-                topic: "Post modern era",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Modern era </h3>
-                   <p>
-                    In the post modern paradigm, the knowledge, that science is constructed by society is taken into consideration.
-                    </p>
-                    <p>
-The decision "what" we research is dependend from the context of the research.
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-            "paradigmns_positivism_details": {
-                topic: "Positivism",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Positivism </h3>
-                   <p>
-                   Positivism is the paradigm, that knowledge derives from measurable phenomenon.
-                    </p>
-                    <p>
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-            "paradigmns_postpositivism_details": {
-                topic: "Post-positivism",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Post-positivism </h3>
-                   <p>
-                  Post positivism tries to overcome the criticism to Positivism. It is based on Falsifiability, probabilities and tries to take the bias of scientists into consideration.
-                    </p>
-                    <p>
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-            "paradigmns_criticaltheory_details": {
-                topic: "Critical Theory",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Critical Theory </h3>
-                   <p>
-                 Critical thinking - as the name suggests - aims on critically questioning the circumstances behind a phenomenon. <br>
-                 Especially questioning the people behind studies and their possible objectives.
-                    </p>
-                    <p>
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-            "paradigmns_constructivism_details": {
-                topic: "Constructivism",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Constructivism </h3>
-                   <p>
-                    Constructivism is a view in the philosophy of science which maintains that scientific knowledge is constructed by the scientific community, who seek to measure and construct models of the natural world. According to the constructivist, natural science therefore consists of mental constructs that aim to explain sensory experience and measurements.
-                    </p>
-                    <p>
-                        </p>
-                    <a class="src" href="https://en.wikipedia.org/wiki/Constructivism_(philosophy_of_science)">[Wikipedia am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-            "paradigms_goodscience_details": {
-                topic: "Good Science",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Good Science </h3>
-                   <p>
-                Good science consists of 3 paradigms:
-                <ul>
-<li>(Post-)Positivism</li>
-<li>Critical theory / Transformative</li>
-<li>Constructivism</li>
-                    </ul>
-                    </p>
-                    <p>
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/paradigmen-der-wissenschaft/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `,
-                background: ""
-            },
-            "scientific_enterprise_publish_perish_details": {
-                topic: "Publish or perish",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>Publish or perish </h3>
-                   <p>
-               The quality of science is often under pressure since through the pressure to publicate a lot of publications are not worth publicating.
-                    </p>
-                    <p>
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/der-wissenschaftsbetrieb/">[Aurora am 2.11.2020]</a>
-                    </div>
-                `},
-            "scientific_enterprise_h_index_details": {
-                topic: "h-index",
-                details: `
-                <div class="details blacktransparent">
-                    <h3>h-index </h3>
-                   <p>
-             The h-index is an indicator, for how much and sucessful a researcher publishes.
-                    </p>
-                    <p>
-                        the numer given, lets call it x, gives how many papers the researcher has published with more than x citations by others.
-                        </p>
-                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Scientific%20Thinking/der-wissenschaftsbetrieb/">[Aurora am 2.11.2020]</a>
-                    <a class="src" href="https://en.wikipedia.org/wiki/H-index">[Wikipedia am 2.11.2020]</a>
-
-                    </div>
-                `}
+           
 
         }
 

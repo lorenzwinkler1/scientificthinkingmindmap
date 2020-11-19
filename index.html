@@ -81,6 +81,23 @@
 
                         ]
                     },
+
+                    {
+                        "id": "algorithm_toggle", expanded: false, "isroot": false, "background-color": "lightblue", "topic": "Algorithmisches Denken", direction: "right", children: [
+                            { id: "algorithm_details1", "background-color": "lightgreen", topic: "Was ist ein Algorithmus?", direction: "right" },    
+                            {
+                                id: "algorithm2_toggle", expanded: false, "background-color": "lightblue", topic: "5 Prinzipien", direction: "right", children: [
+
+                                    { id: "algorithm_details3", "background-color": "lightgreen", topic: "Spezifikation", direction: "right" },
+                                    { id: "algorithm_details4", "background-color": "lightgreen", topic: "Zerlegung", direction: "right" },
+                                    { id: "algorithm_details5", "background-color": "lightgreen", topic: "Abstraktion", direction: "right" },
+                                    { id: "algorithm_details6", "background-color": "lightgreen", topic: "Skalierbarkeit", direction: "right" },
+                                    { id: "algorithm_details7", "background-color": "lightgreen", topic: "Reduktion", direction: "right" },
+                                ]
+                            },
+
+                        ]
+                    },
                 ]
             }
 
@@ -108,6 +125,12 @@
             "jane_wing_details",
             "whatis_example1_details",
             "whatis_example2_details",
+            "algorithm_details1",
+            "algorithm_details3",
+            "algorithm_details4",
+            "algorithm_details5",
+            "algorithm_details6",
+            "algorithm_details7",
 
         ]
         var datablobswithdetails = {
@@ -310,7 +333,72 @@ Die ursprünglichen zwei A's wurden mittlerweile um ein drittes A erweitert um d
                     `,
                 background: ""
             },
-           
+            "algorithm_details3": {
+                topic: "Spezifikation",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Spezifikation</h3>
+                    <p>
+Man benötigt eine Beschreibung über den Zusammenhang zwischen Ein- und Ausgang
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_12.11.2020/-2/">[Aurora am 17.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+     
+            "algorithm_details1": {
+                topic: "Was ist ein Algorithmus?",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Was ist ein Algorithmus?</h3>
+                    <p>
+Ein Algorithmus ist eine eineutige Handlungsvorschrift zur Lösung eines Problems
+                    </p>
+                    <a class="src" href="https://de.wikipedia.org/wiki/Algorithmus#:~:text=Ein%20Algorithmus%20ist%20eine%20eindeutige,in%20menschlicher%20Sprache%20formuliert%20werden.">[Wikipedia am 17.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },         
+            "algorithm_details4": {
+                topic: "Zerlegung",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Zerlegung</h3>
+                    <p>
+Zerlegung eines großen Problems in kleinere Teilprobleme
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_12.11.2020/-2/">[Aurora am 17.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "algorithm_details6": {
+                topic: "Skalierbarkeit",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Skalierbarkeit</h3>
+                    <p>
+Man misst Algortihmen vorrangig an ihrer Effizienz.
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_12.11.2020/-2/">[Aurora am 17.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
+            "algorithm_details7": {
+                topic: "Reduktion",
+                details: `
+                <div class="details blacktransparent">
+                    <h3>Reduktion</h3>
+                    <p>
+Probleme durch andere Probleme ausdrücken.
+                    </p>
+                    <a class="src" href="https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_12.11.2020/-2/">[Aurora am 17.11.2020]</a>
+                    </div>
+                    `,
+                background: ""
+            },
 
         }
 
